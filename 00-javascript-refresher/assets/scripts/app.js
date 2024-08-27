@@ -1,4 +1,6 @@
-import { apiKey } from "./util.js";
-import what from "./util.js"
-console.log(apiKey);
-console.log(what);
+// import { apiKey, another } from "./util.js";
+// import what from "./util.js"
+import * as util from './util.js';
+console.log(util.another);
+console.log(util.apiKey);
+console.log(util.default);
