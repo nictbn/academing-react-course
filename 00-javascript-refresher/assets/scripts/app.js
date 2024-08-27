@@ -9,3 +9,9 @@
 
 // console.log(userMessage);
 // console.log(userMessage);
+
+function greet() {
+    console.log('Hello!');
+}
+
+greet();
