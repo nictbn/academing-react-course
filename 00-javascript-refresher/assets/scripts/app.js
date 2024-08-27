@@ -10,11 +10,16 @@
 // console.log(userMessage);
 // console.log(userMessage);
 
-function createGreeting(username, message = 'Hello') {
+// function createGreeting(username, message = 'Hello') {
     // console.log(username);
     // console.log(message);
-    return 'Hi, I am ' + username + '. ' + message;
-}
+//     return 'Hi, I am ' + username + '. ' + message;
+// }
 
-const greeting = createGreeting('Han');
-console.log(greeting);
+// const greeting = createGreeting('Han');
+// console.log(greeting);
+
+export default (username, message) => {
+    console.log('Hello');
+    return username + ' ' + message;
+}
