@@ -1,4 +1,4 @@
-// import { apiKey, another } from "./util.js";
+// import { apiKey, another as different} from "./util.js";
 // import what from "./util.js"
 import * as util from './util.js';
 console.log(util.another);
