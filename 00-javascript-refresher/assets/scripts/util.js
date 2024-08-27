@@ -1,1 +1,2 @@
-export let apiKey = 'dummy;'
+export let apiKey = 'dummy';
+export default 'whatwhat?';
