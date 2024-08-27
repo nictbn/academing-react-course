@@ -1,6 +1,6 @@
 // import { apiKey, another as different} from "./util.js";
 // import what from "./util.js"
-import * as util from './util.js';
-console.log(util.another);
-console.log(util.apiKey);
-console.log(util.default);
+// import * as util from './util.js';
+// console.log(util.another);
+// console.log(util.apiKey);
+// console.log(util.default);
