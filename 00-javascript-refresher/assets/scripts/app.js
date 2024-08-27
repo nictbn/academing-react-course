@@ -5,7 +5,7 @@
 // console.log(util.apiKey);
 // console.log(util.default);
 
-let userMessage = 'Hello World!!!';
+// let userMessage = 'Hello World!!!';
 
-console.log(userMessage);
-console.log(userMessage);
+// console.log(userMessage);
+// console.log(userMessage);
