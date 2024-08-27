@@ -10,9 +10,9 @@
 // console.log(userMessage);
 // console.log(userMessage);
 
-function greet(username, message) {
+function greet(username, message = 'Hello') {
     console.log(username);
     console.log(message);
 }
 
-greet('user', 'my message');
+greet('user');
