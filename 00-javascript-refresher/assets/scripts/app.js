@@ -68,17 +68,29 @@
 // });
 // console.log(editedHobbies);
 
-const userNameData = ['Max', 'Schwarz'];
-const [firstName, lastName] = userNameData;
+// const userNameData = ['Max', 'Schwarz'];
+// const [firstName, lastName] = userNameData;
 
-console.log(firstName);
-console.log(lastName);
+// console.log(firstName);
+// console.log(lastName);
 
-const user = {
-    name: 'Max',
-    age: 55,
+// const user = {
+//     name: 'Max',
+//     age: 55,
+// }
+
+// const {name: userName, age: userAge} = user;
+// console.log(userName);
+// console.log(userAge);
+
+const hobbies = ['Sports', 'Cooking'];
+const newHobbies = ['Reading'];
+const mergedHobbies = [...newHobbies];
+console.log(mergedHobbies);
+
+
+const extendedUser = {
+    isAdmin: true,
+    ...user,
 }
-
-const {name: userName, age: userAge} = user;
-console.log(userName);
-console.log(userAge);
+console.log(extendedUser);
