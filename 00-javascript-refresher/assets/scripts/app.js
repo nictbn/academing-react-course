@@ -83,14 +83,15 @@
 // console.log(userName);
 // console.log(userAge);
 
-const hobbies = ['Sports', 'Cooking'];
-const newHobbies = ['Reading'];
-const mergedHobbies = [...newHobbies];
-console.log(mergedHobbies);
+// const hobbies = ['Sports', 'Cooking'];
+// const newHobbies = ['Reading'];
+// const mergedHobbies = [...newHobbies];
+// console.log(mergedHobbies);
 
 
-const extendedUser = {
-    isAdmin: true,
-    ...user,
-}
-console.log(extendedUser);
+// const extendedUser = {
+//     isAdmin: true,
+//     ...user,
+// }
+// console.log(extendedUser);
+
