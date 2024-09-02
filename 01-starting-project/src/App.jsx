@@ -13,7 +13,7 @@ function App() {
   }
 
   return (
-    <Fragment>
+    <>
       <Header />
       <main>
         <section id="core-concepts">
@@ -42,7 +42,7 @@ function App() {
           </div>)}
         </section>
       </main>
-    </Fragment>
+    </>
   );
 }
 
