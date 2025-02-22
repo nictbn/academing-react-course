@@ -1,8 +1,9 @@
 export default function Input({ label, isTextarea, name, ...props }) {
+    const classes = "w-full p-1 border-b-2 rounded-sm border-stone-300 bg-stone-200 text-stone-600 focus:outline-none focus:border-stone-600";
     return (
-        <p>
-            <label htmlFor={name}>{label}</label>
-            {isTextarea ? <textarea name={name} {...props}/> : <input name={name} type="text" {...props}/>}
+        <p className="flex flex-col gap-1 my-4">
+            <label className="text-sm font-bold uppercase trext-stone-500" htmlFor={name}>{label}</label>
+            {isTextarea ? <textarea className={classes} name={name} {...props}/> : <input className={classes} name={name} type="text" {...props}/>}
         </p>
     )
 }
