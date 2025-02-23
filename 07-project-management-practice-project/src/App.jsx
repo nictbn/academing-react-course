@@ -89,7 +89,6 @@ function App() {
   }
 
   const selectedProject = projectsState.projects.find( project => project.id === projectsState.selectedProjectId)
-  const tasks = projectsState.tasks.filter((task) => task.projectId === selectedProject.id)
   let content = <SelectedProject 
                   project={selectedProject} 
                   onDelete={handleDeleteProject} 
