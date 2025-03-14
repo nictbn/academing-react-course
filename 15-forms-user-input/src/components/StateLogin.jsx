@@ -26,6 +26,10 @@ export default function Login() {
     setEnteredValues(previousValues => ({
       ...previousValues,
       [identifier]: value
+    }));
+    setDidEdit(previousEdit => ({
+      ...previousEdit,
+      [identifier]: false,
     }))
   }
 
