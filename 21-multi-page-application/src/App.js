@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } 
 import RootLayout from './pages/Root.js';
 import HomePage from './pages/Home.js';
 import ProductsPage from './pages/Products.js';
+import ErrorPage from './pages/Error.js';
 
 // const routeDefinitions = createRoutesFromElements(
 //   <Route>
@@ -12,11 +13,15 @@ import ProductsPage from './pages/Products.js';
 // );
 
 const router = createBrowserRouter([
-  { path: '/', element: <RootLayout />, children: [
-    { path: '/',  element: <HomePage /> },
-    { path: '/products',  element: <ProductsPage /> },
-  ]},
-]);
+    { path: '/', 
+      element: <RootLayout />, 
+      errorElement: <ErrorPage />, 
+      children: [
+        { path: '/',  element: <HomePage /> },
+        { path: '/products',  element: <ProductsPage /> },
+      ]
+    },
+  ]);
 
 // const router = createBrowserRouter(routeDefinitions);
 
