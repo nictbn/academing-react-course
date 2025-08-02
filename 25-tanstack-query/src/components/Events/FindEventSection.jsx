@@ -16,7 +16,7 @@ export default function FindEventSection() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    setSearchTerm(searchElement.value.current);
+    setSearchTerm(searchElement.current.value);
   }
 
   let content = <p>Please enter a search term to find events.</p>
