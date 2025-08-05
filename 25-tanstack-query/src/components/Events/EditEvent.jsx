@@ -1,4 +1,4 @@
-import { Link, redirect, useNavigate, useParams, useSubmit } from 'react-router-dom';
+import { Link, redirect, useNavigate, useParams, useSubmit, useNavigation } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 
 import Modal from '../UI/Modal.jsx';
@@ -8,6 +8,7 @@ import ErrorBlock from '../UI/ErrorBlock.jsx';
 
 export default function EditEvent() {
   const navigate = useNavigate();
+  const { state } = useNavigation();
   const submit = useSubmit();
   const params = useParams();
   const {data, isError, error } = useQuery({
@@ -39,12 +40,15 @@ export default function EditEvent() {
   if (data) {
     content = (
       <EventForm inputData={data} onSubmit={handleSubmit}>
-        <Link to="../" className="button-text">
-          Cancel
-        </Link>
-        <button type="submit" className="button">
-          Update
-        </button>
+        {state === 'submitting' ? <p>Sending data...</p> : <>
+          <Link to="../" className="button-text">
+            Cancel
+          </Link>
+          <button type="submit" className="button">
+            Update
+          </button>
+        </>}
+        
       </EventForm>)
   }
   return (
