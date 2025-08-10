@@ -7,6 +7,7 @@ import classes from './main-header.module.css';
 import Image from "next/image";
 import MainHeaderBackground from "./main-header-background";
 import { usePathname } from "next/navigation";
+import NavLink from "./nav-link";
 
 export default function MainHeader() {
     const path = usePathname();
@@ -21,12 +22,8 @@ export default function MainHeader() {
           </Link>
           <nav className={classes.nav}>
             <ul>
-              <li>
-                <Link href="/meals" className={path.startsWith('/meals') ? classes.active : undefined}>Browse Meals</Link>
-              </li>
-              <li>
-                <Link href="/community" className={path === '/community' ? classes.active : undefined}>Foodies Community</Link>
-              </li>
+              <NavLink href="/meals">Browse Meals</NavLink>
+              <NavLink href="/community">Foodies Community</NavLink>
             </ul>
           </nav>
         </header>
