@@ -3,6 +3,7 @@
 import { saveMeal } from "./meals"
 
 function isInvalidText(text) {
+    console.log(text);
     return !text || text.trim() === '';
 }
 
@@ -18,7 +19,7 @@ export async function shareMeal(prevState, formData) {
 
     if (isInvalidText(meal.title) || 
         isInvalidText(meal.summary) || 
-        isInvalidText(meal.instruction) || 
+        isInvalidText(meal.instructions) || 
         isInvalidText(meal.creator) || 
         isInvalidText(meal.creator_email) || 
         !meal.creator_email.includes('@') || 
@@ -26,6 +27,6 @@ export async function shareMeal(prevState, formData) {
         return {
             message: 'Invalid input.'
         };
-        }
+    }
     await saveMeal(meal);
 }
